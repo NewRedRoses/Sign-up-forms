@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   background-color: antiquewhite;
+  font-family: Rubik, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .container {
   display: flex;
@@ -14,13 +16,30 @@ body {
   flex: 1.5;
 }
 .right {
-  background-color: #de6463;
+  background-color: #ecf0f1;
   flex: 2;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  height: 100%;
+  justify-content: center;
+  /* background-color: blue; */
+  gap: 20px;
+}
+.header {
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dfe6e9;
+}
+p::selection,
+i::selection {
+  background: #e67e22;
+  color: #dfe6e9;
 }
