@@ -2,18 +2,25 @@ body {
   margin: 0px;
   background-color: antiquewhite;
 }
-.right-container {
+.container {
   display: flex;
   width: 100vw;
   height: 100vh;
 }
-.image {
+.left {
   background-image: url(Files/maria-orlova-2O7TNAWTrPg-unsplash.jpg);
   position: relative;
   background-size: cover;
   flex: 1.5;
 }
-.signup {
+.right {
   background-color: #de6463;
   flex: 2;
+  padding: 0 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
